@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortKatmanli.Dal", "PortKatmanli.Dal\PortKatmanli.Dal.csproj", "{32C013C5-8FEE-47EF-9D44-5CC7EF57BDC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortKatmanli.Bll", "PortKatmanli.Bll\PortKatmanli.Bll.csproj", "{6929DD9E-B528-4848-A24F-24A3CECC6D64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortKatmanli.WcfLibrary", "PortKatmanli.WcfLibrary\PortKatmanli.WcfLibrary.csproj", "{B123F8F0-101D-4A64-8F83-A6CE74A12321}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PortKatmanli.WcfIISHost", "PortKatmanli.WcfIISHost\", "{EE4B4368-B6ED-4862-9B37-29D140131C9D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57835"
+		Debug.AspNetCompiler.PhysicalPath = "PortKatmanli.WcfIISHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57835\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57835"
+		Release.AspNetCompiler.PhysicalPath = "PortKatmanli.WcfIISHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57835\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57835"
+		SlnRelativePath = "PortKatmanli.WcfIISHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortKatmanli.Entities", "PortKatmanli.Entities\PortKatmanli.Entities.csproj", "{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortKatmanli.MvcWebUI", "PortKatmanli.MvcWebUI\PortKatmanli.MvcWebUI.csproj", "{7FBC7030-3F16-4CFC-A7F7-53CCB65113D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortKatmanli.MvcWebUI.Tests", "PortKatmanli.MvcWebUI.Tests\PortKatmanli.MvcWebUI.Tests.csproj", "{7FF8F180-D7C4-4470-80FF-3C47FCFD882B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortKatmanli.Interfaces", "PortKatmanli.Interfaces\PortKatmanli.Interfaces.csproj", "{1F5CBAEB-2400-4203-8995-1A3212DE6E48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32C013C5-8FEE-47EF-9D44-5CC7EF57BDC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C013C5-8FEE-47EF-9D44-5CC7EF57BDC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C013C5-8FEE-47EF-9D44-5CC7EF57BDC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C013C5-8FEE-47EF-9D44-5CC7EF57BDC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6929DD9E-B528-4848-A24F-24A3CECC6D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6929DD9E-B528-4848-A24F-24A3CECC6D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6929DD9E-B528-4848-A24F-24A3CECC6D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6929DD9E-B528-4848-A24F-24A3CECC6D64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B123F8F0-101D-4A64-8F83-A6CE74A12321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B123F8F0-101D-4A64-8F83-A6CE74A12321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B123F8F0-101D-4A64-8F83-A6CE74A12321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B123F8F0-101D-4A64-8F83-A6CE74A12321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE4B4368-B6ED-4862-9B37-29D140131C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4B4368-B6ED-4862-9B37-29D140131C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE4B4368-B6ED-4862-9B37-29D140131C9D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE4B4368-B6ED-4862-9B37-29D140131C9D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBC7030-3F16-4CFC-A7F7-53CCB65113D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBC7030-3F16-4CFC-A7F7-53CCB65113D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBC7030-3F16-4CFC-A7F7-53CCB65113D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBC7030-3F16-4CFC-A7F7-53CCB65113D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FF8F180-D7C4-4470-80FF-3C47FCFD882B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FF8F180-D7C4-4470-80FF-3C47FCFD882B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF8F180-D7C4-4470-80FF-3C47FCFD882B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FF8F180-D7C4-4470-80FF-3C47FCFD882B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5CBAEB-2400-4203-8995-1A3212DE6E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5CBAEB-2400-4203-8995-1A3212DE6E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5CBAEB-2400-4203-8995-1A3212DE6E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5CBAEB-2400-4203-8995-1A3212DE6E48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE31B790-0C3B-46A5-8B79-58C4DF6E43DD}
+	EndGlobalSection
+EndGlobal
