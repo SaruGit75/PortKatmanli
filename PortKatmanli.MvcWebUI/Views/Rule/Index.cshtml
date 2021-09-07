@@ -1,0 +1,26 @@
+﻿@model System.Collections.Generic.List<PortKatmanli.Entities.Rules>
+@{
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<div>
+    <table class="table table-bordered">
+        <tr>
+            <th>Rule Header ID</th>
+            <th>Event Type</th>
+            <th>Freight Kind</th>
+            <th>Category</th>
+            <th>Transit State</th>
+        </tr>
+        @foreach (var i in Model)
+        {
+            <tr>
+                <td>@i.RuleHeaderId</td>
+                <td>@i.EventType</td>
+                <td>@i.FreightKind</td>
+                <td>@i.Category</td>
+                <td>@i.TransitState</td>
+            </tr>
+        }
+    </table>
+</div>

@@ -13,7 +13,7 @@ namespace PortKatmanli.WcfLibrary.Concrete
     public class RuleService : IRuleService
     {
         private readonly RuleManager _ruleManager = new RuleManager(new EfRuleDal());
-        public void Add(Rule rule)
+        public void Add(Rules rule)
         {
             _ruleManager.Add(rule);
         }
@@ -23,17 +23,17 @@ namespace PortKatmanli.WcfLibrary.Concrete
             _ruleManager.Delete(ruleId);
         }
 
-        public Rule Get(int ruleId)
+        public Rules Get(int ruleId)
         {
             return _ruleManager.Get(ruleId);    
         }
 
-        public List<Rule> GetAll()
+        public List<Rules> GetAll()
         {
             return _ruleManager.GetAll();
         }
 
-        public void Update(Rule rule)
+        public void Update(Rules rule)
         {
             _ruleManager.Update(rule);
         }

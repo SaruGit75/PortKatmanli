@@ -1,0 +1,52 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Katmanlı Port Projesi</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-image: url("/Content/ronan-furuta-daSq9zhROxY-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .rulesLayTop {
+            background-color: lightslategray;
+            border: 1px solid;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+
+        .rulesLayMid {
+        }
+
+        .rulesLayEnd {
+            background-color: cadetblue;
+            margin-top: 50px;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="rulesLayTop container">
+        <h3>Rules List Panel</h3>
+    </div>
+
+    <div class="rulesLayMid">
+        @*kategoriler gelebilir*@
+    </div>
+
+    <div class="rulesLayEnd container">
+        @RenderBody()
+    </div>
+</body>
+</html>

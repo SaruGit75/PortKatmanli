@@ -9,10 +9,10 @@ namespace PortKatmanli.Dal.Abstract
 {
     public interface IRuleDal
     {
-        List<Rule> GetAll();
-        Rule Get(int ruleId);
-        void Add(Rule rule);
+        List<Rules> GetAll();
+        Rules Get(int ruleId);
+        void Add(Rules rule);
         void Delete(int ruleId);
-        void Update(Rule rule);
+        void Update(Rules rule);
     }
 }

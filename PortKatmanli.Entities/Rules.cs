@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 
 namespace PortKatmanli.Entities
 {
-    public class Rule
+    public class Rules
     {
+        [Key]
         public int RuleHeaderId { get; set; }
         public string EventType { get; set; }
         public string FreightKind { get; set; }
         public string Category { get; set; }
         public string TransitState { get; set; }
-
         
+
     }
 }

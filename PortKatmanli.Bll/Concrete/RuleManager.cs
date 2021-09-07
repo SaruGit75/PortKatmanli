@@ -18,7 +18,7 @@ namespace PortKatmanli.Bll.Concrete
             _ruleDal = ruleDal;
         }
 
-        public void Add(Rule rule)
+        public void Add(Rules rule)
         {
             _ruleDal.Add(rule);
         }
@@ -28,17 +28,17 @@ namespace PortKatmanli.Bll.Concrete
             _ruleDal.Delete(ruleId);
         }
 
-        public Rule Get(int ruleId)
+        public Rules Get(int ruleId)
         {
             return _ruleDal.Get(ruleId);
         }
 
-        public List<Rule> GetAll()
+        public List<Rules> GetAll()
         {
             return _ruleDal.GetAll();
         }
 
-        public void Update(Rule rule)
+        public void Update(Rules rule)
         {
             _ruleDal.Update(rule);
         }

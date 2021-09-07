@@ -2,17 +2,24 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PortKatmanli.Interfaces
 {
+    [ServiceContract]
     public interface IRuleService
     {
-        List<Rule> GetAll();
-        Rule Get(int ruleId);
-        void Add(Rule rule);
+        [OperationContract]
+        List<Rules> GetAll();
+        [OperationContract]
+        Rules Get(int ruleId);
+        [OperationContract]
+        void Add(Rules rule);
+        [OperationContract]
         void Delete(int ruleId);
-        void Update(Rule rule);
+        [OperationContract]
+        void Update(Rules rule);
     }
 }

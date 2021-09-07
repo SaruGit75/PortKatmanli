@@ -12,7 +12,7 @@ namespace PortKatmanli.Dal.Concrete.EntityFramework
     {
         PortKatmanliContext _context = new PortKatmanliContext();
 
-        public void Add(Rule rule)
+        public void Add(Rules rule)
         {
             _context.Rules.Add(rule);
 
@@ -27,20 +27,20 @@ namespace PortKatmanli.Dal.Concrete.EntityFramework
             _context.SaveChanges();
         }
 
-        public Rule Get(int ruleId)
+        public Rules Get(int ruleId)
         {
             return _context.Rules.Where(i => i.RuleHeaderId
                                              == ruleId).FirstOrDefault();
         }
 
-        public List<Rule> GetAll()
+        public List<Rules> GetAll()
         {
             return _context.Rules.ToList();
         }
 
-        public void Update(Rule rule)
+        public void Update(Rules rule)
         {
-            Rule ruleForUpdate = _context.Rules.FirstOrDefault(i => i.RuleHeaderId == rule.RuleHeaderId);
+            Rules ruleForUpdate = _context.Rules.FirstOrDefault(i => i.RuleHeaderId == rule.RuleHeaderId);
 
             ruleForUpdate.EventType = rule.EventType;
             ruleForUpdate.FreightKind = rule.FreightKind;

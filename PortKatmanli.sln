@@ -12,6 +12,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PortKatmanli.WcfIISHost", "PortKatmanli.WcfIISHost\", "{EE4B4368-B6ED-4862-9B37-29D140131C9D}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		ProjectReferences = "{b123f8f0-101d-4a64-8f83-a6ce74a12321}|PortKatmanli.WcfLibrary.dll;{6929DD9E-B528-4848-A24F-24A3CECC6D64}|PortKatmanli.Bll.dll;{32C013C5-8FEE-47EF-9D44-5CC7EF57BDC3}|PortKatmanli.Dal.dll;{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}|PortKatmanli.Entities.dll;{1F5CBAEB-2400-4203-8995-1A3212DE6E48}|PortKatmanli.Interfaces.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_57835"
 		Debug.AspNetCompiler.PhysicalPath = "PortKatmanli.WcfIISHost\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57835\"
