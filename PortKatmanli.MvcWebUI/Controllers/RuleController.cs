@@ -21,10 +21,22 @@ namespace PortKatmanli.MvcWebUI.Controllers
             _ruleService = ruleService;
         }
 
-        public ViewResult Index()
+        public int pageSize = 3;
+        public ViewResult Index(int page = 1)
         {
             List<Rules> rules = _ruleService.GetAll();
-            return View(rules);
+
+                //sıkıntı cıkabilir.
+            return View(new RuleViewModel
+            {
+                Rule = rules.Skip((page - 1) * pageSize).Take(3).ToList(),
+                PagingInfo = new PagingInfo
+                {
+                    ItemsPerPage = pageSize,
+                    TotalItems = rules.Count,
+                    CurrentPage = page
+                }
+            });
         }
     }
 }

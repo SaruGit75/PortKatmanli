@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PortKatmanli.Entities
 {
-    public class RuleDetail
+    public class RuleDetails
     {
         public int RuleDetailHeaderKey { get; set; }
         public int RuleItemKey { get; set; }
