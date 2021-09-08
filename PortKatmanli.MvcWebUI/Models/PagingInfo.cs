@@ -2,8 +2,8 @@
 {
     public class PagingInfo
     {
-        public int ItemsPerPage { get; set; }
-        public int TotalItems { get; set; }
-        public int CurrentPage { get; set; }
+        public int SayfaBasiItem { get; set; }
+        public int ToplamItem { get; set; }
+        public int SuAnkiSayfa { get; set; }
     }
 }

@@ -1,8 +1,10 @@
-﻿@model System.Collections.Generic.List<PortKatmanli.Entities.Rules>
+﻿@model RuleViewModel
+@using PortKatmanli.MvcWebUI.HtmlHelpers
 
 @{
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
+
 
 <div>
     <table class="table table-responsive" style="margin-top:10px;">
@@ -13,7 +15,7 @@
             <th>Category</th>
             <th>Transit State</th>
         </tr>
-        @foreach (var i in Model)
+        @foreach (var i in Model.RuleSkip)
         {
             <tr>
                 <td>@i.RuleHeaderId</td>
@@ -23,5 +25,9 @@
                 <td>@i.TransitState</td>
             </tr>
         }
+
     </table>
+    <div>
+        @Html.Pager(Model.PagingInfo)
+    </div>
 </div>

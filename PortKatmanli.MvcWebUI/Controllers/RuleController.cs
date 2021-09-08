@@ -26,15 +26,15 @@ namespace PortKatmanli.MvcWebUI.Controllers
         {
             List<Rules> rules = _ruleService.GetAll();
 
-                //sıkıntı cıkabilir.
+            //sıkıntı cıkabilir.
             return View(new RuleViewModel
             {
-                Rule = rules.Skip((page - 1) * pageSize).Take(3).ToList(),
+                RuleSkip = rules.Skip((page - 1) * pageSize).Take(3).ToList(),
                 PagingInfo = new PagingInfo
                 {
-                    ItemsPerPage = pageSize,
-                    TotalItems = rules.Count,
-                    CurrentPage = page
+                    SayfaBasiItem = pageSize,
+                    ToplamItem = rules.Count,
+                    SuAnkiSayfa = page
                 }
             });
         }

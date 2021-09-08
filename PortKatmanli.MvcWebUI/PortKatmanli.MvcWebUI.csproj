@@ -135,6 +135,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HtmlHelpers\PagingHelper.cs" />
     <Compile Include="Infrastructure\NinjectControllerFactory.cs" />
     <Compile Include="Models\PagingInfo.cs" />
     <Compile Include="Models\RuleViewModel.cs" />
@@ -206,7 +207,7 @@
       <Name>PortKatmanli.Dal</Name>
     </ProjectReference>
     <ProjectReference Include="..\PortKatmanli.Entities\PortKatmanli.Entities.csproj">
-      <Project>{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}</Project>
+      <Project>{4b3bee7c-0d43-4367-8e16-dd5cf9022a78}</Project>
       <Name>PortKatmanli.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\PortKatmanli.Interfaces\PortKatmanli.Interfaces.csproj">
