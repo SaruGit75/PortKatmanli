@@ -38,5 +38,26 @@ namespace PortKatmanli.MvcWebUI.Controllers
                 }
             });
         }
+
+
+        public ActionResult Add()
+        {
+            return View(new Rules());
+        }
+
+
+        [HttpPost]
+        public ActionResult Add(Rules rules)
+        {
+            if (ModelState.IsValid)
+            {
+                _ruleService.Add(rules);
+                return RedirectToAction("Index");
+            }
+
+            return View(rules);
+        }
+
+
     }
 }

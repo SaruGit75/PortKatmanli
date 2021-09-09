@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace PortKatmanli.Entities
 {
-    public class RuleDetails
+    public class AllEvent
     {
-        public int RuleDetailHeaderKey { get; set; }
-        public int RuleItemKey { get; set; }
+        [Key]
+        public long PKey { get; set; }
         public string EventType { get; set; }
-
         public long inv_unit_gkey { get; set; }
     }
 }

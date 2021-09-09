@@ -46,6 +46,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PortKatmanli.Dal\PortKatmanli.Dal.csproj">
+      <Project>{32C013C5-8FEE-47EF-9D44-5CC7EF57BDC3}</Project>
+      <Name>PortKatmanli.Dal</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PortKatmanli.Entities\PortKatmanli.Entities.csproj">
       <Project>{4B3BEE7C-0D43-4367-8E16-DD5CF9022A78}</Project>
       <Name>PortKatmanli.Entities</Name>

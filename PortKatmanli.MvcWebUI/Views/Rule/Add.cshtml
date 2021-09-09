@@ -1,0 +1,20 @@
+﻿@model PortKatmanli.Entities.Rules
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<h2>Yeni Kural Ekle</h2>
+
+<table>
+    <tr>
+        @using (Html.BeginForm())
+        {
+            @Html.EditorForModel()
+
+            <input class="btn btn-outline-success" style="margin-top: 10px; margin-left: 130px;" type="submit" value="Kaydet" />
+        }
+
+    </tr>
+</table>
+

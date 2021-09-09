@@ -11,6 +11,7 @@ namespace PortKatmanli.Dal.Concrete.EntityFramework
     public class PortKatmanliContext : DbContext
     {
         public DbSet<Rules> Rules { get; set; }
-
+        public DbSet<AllEvent> AllEvents { get; set; }
+        public DbSet<Unit> Units { get; set; }
     }
 }

@@ -17,6 +17,7 @@
         </tr>
         @foreach (var i in Model.RuleSkip)
         {
+
             <tr>
                 <td>@i.RuleHeaderId</td>
                 <td>@i.EventType</td>
@@ -25,9 +26,12 @@
                 <td>@i.TransitState</td>
             </tr>
         }
-
     </table>
     <div>
         @Html.Pager(Model.PagingInfo)
     </div>
+    <div>
+        <a class="btn btn-warning" href="/Rule/Add/">Yeni Ekle</a>
+    </div>
+
 </div>

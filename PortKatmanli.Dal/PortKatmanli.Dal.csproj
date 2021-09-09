@@ -51,8 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAllEventDal.cs" />
+    <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Abstract\IRuleDal.cs" />
+    <Compile Include="Abstract\IUnitDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfAllEventDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfRuleDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfUnitDal.cs" />
     <Compile Include="Concrete\EntityFramework\PortKatmanliContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

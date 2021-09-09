@@ -10,14 +10,28 @@ namespace PortKatmanli.Dal.Concrete.EntityFramework
 {
     public class EfRuleDal : IRuleDal
     {
-        PortKatmanliContext _context = new PortKatmanliContext();
+        private readonly PortKatmanliContext _context;
 
+        public EfRuleDal(PortKatmanliContext context)
+        {
+            _context = context;
+        }
         public void Add(Rules rule)
         {
             _context.Rules.Add(rule);
 
             _context.SaveChanges();
         }
+
+        //public CompleXModel GetJoinTable(string unitId, string category, string freightKind)            //sonradan
+        //{
+        //    var reult = from a in _context.Rules
+        //                join b in _context.Rules on a.Category equals b.Category                         
+        //                select new CompleXModel
+        //                {
+
+        //                }
+        //}
 
         public void Delete(int ruleId)
         {
@@ -50,4 +64,9 @@ namespace PortKatmanli.Dal.Concrete.EntityFramework
             _context.SaveChanges();
         }
     }
+
+    //public class CompleXModel       //sonradan
+    //{
+
+    //}
 }

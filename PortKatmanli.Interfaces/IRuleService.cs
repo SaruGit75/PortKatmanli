@@ -1,4 +1,5 @@
-﻿using PortKatmanli.Entities;
+﻿using PortKatmanli.Dal.Abstract;
+using PortKatmanli.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,5 +22,9 @@ namespace PortKatmanli.Interfaces
         void Delete(int ruleId);
         [OperationContract]
         void Update(Rules rule);
+        [OperationContract]
+        List<AllEventComplexModel> AllEventComplexModels(Rules rules);
+        [OperationContract]
+        List<string> GetCat();
     }
 }

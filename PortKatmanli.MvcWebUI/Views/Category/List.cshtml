@@ -1,0 +1,7 @@
+﻿@model System.Collections.Generic.List<PortKatmanli.Entities.Category>
+
+
+@foreach (var i in Model)
+{
+    @Html.RouteLink(i.CategoryName, new { controller="Rule", action="Index"})
+}
