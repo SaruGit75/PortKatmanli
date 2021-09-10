@@ -7,5 +7,6 @@ namespace PortKatmanli.MvcWebUI
     {
         public List<Rules> RuleSkip { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public bool IsCheched { get; set; } = false;
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PortKatmanli.Dal.Concrete.EntityFramework
 {
     public class EfCategoryDal : ICategoryDal
@@ -17,9 +18,13 @@ namespace PortKatmanli.Dal.Concrete.EntityFramework
             _context = context;
         }
 
-        public List<string> GetCat()
+        public List<Category> GetCat()
         {
-            var catGet = _context.Units.Select(i => i.Category).Distinct().ToList();
+            var catGet = (from a in _context.Units.Select(i => i.Category).Distinct()
+                         select new Category
+                         {                             
+                             CategoryName = a
+                         }).ToList();
 
             return catGet;
         }

@@ -22,11 +22,11 @@ namespace PortKatmanli.MvcWebUI.Controllers
         }
 
         public int pageSize = 3;
-        public ViewResult Index(int page = 1)
+        public ViewResult Index(int page = 1, int category = 0)
         {
-            List<Rules> rules = _ruleService.GetAll();
+            List<Rules> rules = _ruleService.GetAll().Where(t => t.CategoryId == category || category == 0).ToList();
 
-            //sıkıntı cıkabilir.
+
             return View(new RuleViewModel
             {
                 RuleSkip = rules.Skip((page - 1) * pageSize).Take(3).ToList(),
@@ -34,7 +34,7 @@ namespace PortKatmanli.MvcWebUI.Controllers
                 {
                     SayfaBasiItem = pageSize,
                     ToplamItem = rules.Count,
-                    SuAnkiSayfa = page
+                    SuAnkiSayfa = page,
                 }
             });
         }
@@ -58,6 +58,20 @@ namespace PortKatmanli.MvcWebUI.Controllers
             return View(rules);
         }
 
+        //public ActionResult Bul()
+        //{
+        //    return View();
+        //}
+
+        //[HttpPost]
+        //public ActionResult Bul(int unitId)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        _ruleService.Get(unitId);
+        //        return
+        //    }
+        //}
 
     }
 }

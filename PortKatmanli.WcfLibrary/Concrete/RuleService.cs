@@ -45,7 +45,7 @@ namespace PortKatmanli.WcfLibrary.Concrete
             return _ruleManager.AllEventComplexModels(rule);
         }
 
-        public List<string> GetCat()
+        public List<Category> GetCat()
         {
             return _ruleManager.GetCat();
         }

@@ -1,4 +1,5 @@
-﻿using PortKatmanli.Interfaces;
+﻿using PortKatmanli.Entities;
+using PortKatmanli.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

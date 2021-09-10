@@ -47,7 +47,7 @@ namespace PortKatmanli.Bll.Concrete
             return _ruleDal.GetAll();
         }
 
-        public List<string> GetCat()
+        public List<Category> GetCat()
         {
             return _categoryDal.GetCat();
         }

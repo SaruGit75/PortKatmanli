@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>Katmanlı Port Projesi</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/w3.css" rel="stylesheet" />
     <style>
         body {
             background-image: url("/Content/ronan-furuta-daSq9zhROxY-unsplash.jpg");
@@ -25,6 +26,8 @@
         }
 
         .rulesLayMid {
+            border : 1px solid;
+            background-color : gray; 
         }
 
         .rulesLayEnd {
@@ -45,8 +48,8 @@
             padding: 8px 12px;
             text-decoration: none;
             transition: background-color .3s;
-            border:1px solid;
-            border-radius:5px;
+            border: 1px solid;
+            border-radius: 5px;
         }
 
             .pagination a.active {
@@ -58,8 +61,30 @@
                 background-color: darkslategray;
             }
 
-            .seciliLink{
-                background-color:dimgrey;
+        .seciliLink {
+            background-color: #faa307;
+        }
+
+        .aa {
+            border-radius: 5px;
+            box-shadow: 10px 10px 10px black;
+            background-color: cadetblue !important;
+        }
+            .aa:hover {
+                background-color: #faa307 !important;
+                transition-delay: 0.1s;
+            }
+        .xx{
+            border-radius:10px !important;
+            background-color: cadetblue !important;
+        }
+
+        .linkXx{
+            color:black;
+        }
+
+            .linkXx:hover {
+                background-color: #FFC107 !important;
             }
     </style>
 </head>
@@ -68,12 +93,24 @@
         <h3>Rules List Panel</h3>
     </div>
 
-    <div class="rulesLayMid">
-        @{Html.RenderAction("List", "Category");}
+    <div>
+        @{Html.RenderAction("List", "Category"); }
+
     </div>
 
     <div class="rulesLayEnd container">
         @RenderBody()
     </div>
+
+
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
 </body>
 </html>

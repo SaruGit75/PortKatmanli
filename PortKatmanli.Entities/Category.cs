@@ -8,7 +8,7 @@ namespace PortKatmanli.Entities
 {
     public class Category
     {
-        public int CategoryId { get; set; }
+        public int CategoryId => CategoryName == "Export" ? 1 : CategoryName == "Import" ? 2 : CategoryName == "Storage" ? 3 : 4;
         public string CategoryName { get; set; }
     }
 }

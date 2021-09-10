@@ -1,7 +1,18 @@
 ﻿@model System.Collections.Generic.List<PortKatmanli.Entities.Category>
 
 
-@foreach (var i in Model)
-{
-    @Html.RouteLink(i.CategoryName, new { controller="Rule", action="Index"})
-}
+
+
+<div class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left xx" id="mySidebar" style="display:none">
+    <button class="w3-bar-item w3-button w3-large w3-amber"
+            onclick="w3_close()">
+        Close &times;
+    </button>
+    @Html.RouteLink("Home", new { controller = "Rule", action = "Index", category = 0 }, new { @class = "w3-bar-item w3-button linkXx" })
+    @foreach (var i in Model)
+    {
+        @Html.RouteLink(i.CategoryName, new { category = i.CategoryId, controller = "Rule", action = "Index" }, new { @class = "w3-bar-item w3-button linkXx" })
+    }
+</div>
+
+<button class="w3-button w3-white w3-xlarge aa" onclick="w3_open()">&#9776;</button>

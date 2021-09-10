@@ -25,6 +25,6 @@ namespace PortKatmanli.Interfaces
         [OperationContract]
         List<AllEventComplexModel> AllEventComplexModels(Rules rules);
         [OperationContract]
-        List<string> GetCat();
+        List<Category> GetCat();
     }
 }

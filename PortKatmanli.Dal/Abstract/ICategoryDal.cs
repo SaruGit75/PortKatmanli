@@ -9,6 +9,6 @@ namespace PortKatmanli.Dal.Abstract
 {
     public interface ICategoryDal
     {
-        List<string> GetCat();
+        List<Category> GetCat();
     }
 }
